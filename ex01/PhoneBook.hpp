@@ -6,21 +6,18 @@
 # include <ctime>
 # include "Contact.hpp"
 
-
+# define MAX_CONTACTS 8
 class PhoneBook
 {
     private :
             int num_contact;
     public:
-            static const int MAX_CONTACTS = 8;
+            PhoneBook();
             Contact contacts[MAX_CONTACTS];
 
-            PhoneBook();
-            ~PhoneBook();
-
             void addContact();
-            void searchContact() const;
+            void searchContact()const;
 
-}
+};
 
 #endif
